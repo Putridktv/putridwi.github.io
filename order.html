@@ -1,0 +1,278 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Ijeom Food</title>
+		<link rel="stylesheet" type="text/css" href="styleQ.css">
+		<script type="text/javaScript">
+			function cek() {
+				var name = document.getElementById("fnama").value;
+				var hp = document.getElementById("fnohp").value;
+				var almt = document.getElementById("falamat").value;
+				var ChikB = document.getElementById("harga_bitis").value;
+				var ChikW = document.getElementById("harga_wungs").value;
+				var rbChikB = document.getElementById("harga_bites").value;
+				var rbChikW = document.getElementById("harga_wings").value;
+				var rbChiKat = document.getElementById("harga_katsu").value;
+				var NasiG = document.getElementById("harga_nasi").value;
+				var AyamG = document.getElementById("harga_ayam").value;
+				var CornD = document.getElementById("harga_corn").value;
+				var Esteh = document.getElementById("harga_esteh").value;
+				var Esjeruk = document.getElementById("harga_jeruk").value;
+				var Lemontea = document.getElementById("harga_tea").value;
+				var Milo = document.getElementById("harga_milo").value;
+				var Pepsi = document.getElementById("harga_pepsi").value;
+				var Cocacola = document.getElementById("harga_coca").value;
+				var Fanta = document.getElementById("harga_fanta").value;
+				var Sprite = document.getElementById("harga_sprite").value;	
+				if( name =="" || hp=="" || almt =="" || ChikB == "" || ChikW=="" || rbChikB=="" || rbChikW=="" || rbChiKat=="" || NasiG=="" || AyamG=="" || CornD=="" || Esteh=="" || Esjeruk=="" ||Lemontea=="" || Milo=="" || Pepsi=="" || Cocacola=="" || Fanta=="" || Sprite==""){
+					
+					alert("Field tidak boleh kosong, Isikan 0 jika tidak dipesan.");
+					exit;
+				}
+				
+			}
+			function hasil() 
+			{
+				cek();
+				var ChikB = 18000 * parseInt(document.getElementById("harga_bitis").value);
+				var ChikW = 22000 * parseInt(document.getElementById("harga_wungs").value);
+				var rbChikB = 22000 * parseInt(document.getElementById("harga_bites").value);
+				var rbChikW = 25000 * parseInt(document.getElementById("harga_wings").value);
+				var rbChiKat = 20000 * parseInt(document.getElementById("harga_katsu").value);
+				var NasiG = 20000 * parseInt(document.getElementById("harga_nasi").value);
+				var AyamG = 20000 * parseInt(document.getElementById("harga_ayam").value);
+				var CornD = 15000 * parseInt(document.getElementById("harga_corn").value);
+				var Esteh = 5000 * parseInt(document.getElementById("harga_esteh").value);
+				var Esjeruk = 5000 * parseInt(document.getElementById("harga_jeruk").value);
+				var Lemontea = 7000 * parseInt(document.getElementById("harga_tea").value);
+				var Milo = 7000 * parseInt(document.getElementById("harga_milo").value);
+				var Pepsi = 10000 * parseInt(document.getElementById("harga_pepsi").value);
+				var Cocacola = 10000 * parseInt(document.getElementById("harga_coca").value);
+				var Fanta = 10000 * parseInt(document.getElementById("harga_fanta").value);
+				var Sprite = 10000 * parseInt(document.getElementById("harga_sprite").value);
+	
+				console.log("Test")
+				var Jumlah_harga;
+				Jumlah_harga = ChikB + ChikW + rbChikB + rbChikW + rbChiKat + NasiG + AyamG + CornD + Esteh + Esjeruk + Lemontea + Milo + Pepsi + Cocacola + Fanta + Sprite;
+	
+				document.getElementById("hasil").value = Jumlah_harga;
+			}
+			function pesan() {
+				cek();
+				alert("Pesanan Segera Disiapkan, Ditunggu ya..!");
+				window.location.href=window.location.href;
+				exit;
+			}
+		</script>
+	</head>
+	<body>
+	<div id='luar'>
+		<div id='header'> </div>
+		
+		<div class="navbar">
+			<a href="index.html"><span>Home</span></a></li>
+				<div class="dropdown">
+					<button class="dropbtn">
+						Menu
+					</button>
+					<div class="dropdown-content">
+						<a href="makanan.html"><span>Makanan</span></a>
+						<a href="minuman.html"><span>Minuman</span></a>
+					</div>
+				</div>			
+			<a href="order.html">Order</a>
+			<a href="About.html">Profil</a>
+		</div>
+		
+		<div id='konten3'>
+			<div class="order">
+			<table width="75%" rules="none" align="center">
+			  <center><h2>Order</h2></center>
+				<tr height="40px">
+					<td><label>Nama</label></td>
+					<td>:</td>
+					<td colspan="2"><input type="text" name="fnama" id="fnama" /></td>
+				</tr>
+				<tr height="40px">
+					<td><label>No Hp</label></td>
+					<td>:</td>
+					<td colspan="2"><input type="text" name="fnohp" id="fnohp" /></td>
+				</tr>
+				<tr height="40px">
+					<td><label>Alamat</label></td>
+					<td>:</td>
+					<td colspan="2"><textarea name="falamat" id="falamat" style="width:87%" ></textarea></td>
+				</tr>
+				<tr height="40px">
+					<td><label>Makanan</label></td>
+					<td>:</td>
+					<td>Chiken bites</td>
+					<td><input type="text" name="jumlah" id="harga_bitis" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Chiken Wings</td>
+					<td><input type="text" name="jumlah" id="harga_wungs" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Rice Bowl Chiken Bites</td>
+					<td><input type="text" name="jumlah" id="harga_bites" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Rice Bowl Chiken Wings</td>
+					<td><input type="text" name="jumlah" id="harga_wings" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Rice Bowl Chiken Katsu</td>
+					<td><input type="text" name="jumlah" id="harga_katsu" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Nasi Goreng</td>
+					<td><input type="text" name="jumlah" id="harga_nasi" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Ayam Geprek</td>
+					<td><input type="text" name="jumlah" id="harga_ayam" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Corndog</td>
+					<td><input type="text" name="jumlah" id="harga_corn" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td><label>Minuman</label></td>
+					<td>:</td>
+					<td>Es Teh</td>
+					<td><input type="text" name="jumlah" id="harga_esteh" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Es Jeruk</td>
+					<td><input type="text" name="jumlah" id="harga_jeruk" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Lemon Tea</td>
+					<td><input type="text" name="jumlah" id="harga_tea" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Milo</td>
+					<td><input type="text" name="jumlah" id="harga_milo" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Pepsi</td>
+					<td><input type="text" name="jumlah" id="harga_pepsi" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Coca - Cola</td>
+					<td><input type="text" name="jumlah" id="harga_coca" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Fanta</td>
+					<td><input type="text" name="jumlah" id="harga_fanta" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td>Sprite</td>
+					<td><input type="text" name="jumlah" id="harga_sprite" />pcs</td>
+				</tr>
+				<tr height="40px">
+					<td colspan="2"></td>
+					<td align="right">total</td>
+					<td><input type="text" name="hasil" id="hasil" /></td>
+				</tr>
+				<tr height="40px">
+					<td></td>
+					<td></td>
+					<td align="right">
+						<input type="button" value="Print" onclick="cek(); + window.print();"/>&nbsp;
+					</td>
+					<td>
+						<input type="button" value="Jumlah Tolal Order" onclick="hasil();"/>
+						<input type="button" value="Order" onclick="pesan();"/>
+					</td>
+				</tr>
+			</table>			
+			</div>
+			
+			<aside>
+			<section class="contack-details">
+				<h3>Kontak :</h3>
+				<div class="kontak">	
+					<table width="80%" align="center">
+						<tr height="50px" align="center">
+							<td> 
+								<div class="efek"><a href="tel: +62 878 2907 6661" target="_blank">
+									<img src="bahan/telp.png" width="70%"></div>
+								</a>
+							</td>
+							<td> 087829076661</td>
+						</tr>
+						<tr height="50px" align="center">
+							<td>
+								<div class="efek"><a href="https://api.whatsapp.com/send?phone=6287829076661" target="_blank">
+									<img src="bahan/wa.png" width="70%"></div>
+								</a>
+							</td>
+							<td>087829076661</td>
+						</tr>
+						<tr height="50px" align="center">
+							<td>
+								<div class="efek"><a href="https://www.instagram.com/ijeom.jogja/" target="_blank">
+									<img src="bahan/ig.png" width="70%"></div>
+								</a>
+							</td>
+							<td>ijeom.food</td>
+						</tr>
+					</table>
+				</div>		  
+				  <br><br>
+				  
+				<h3>Available at :</h3>
+				<div class="avail">
+					<div class="avail-isi">
+					<table align="center" width="90%">
+						<tr height="70px" align="center">
+							<td>
+								<div class="efek2"><a href="https://gofood.co.id/english/solo/restaurant/ijeom-food-blunyahrejo-4a0ba1ce-c846-44ba-9a75-9d2ed25471e4" target="_blank">
+									<img src="bahan/gojek.png" width="70%">
+								</div></a>
+							</td>
+						</tr>
+						<tr height="70px" align="center">
+							<td>
+								<div class="efek2"><a href="https://food.grab.com/id/en/restaurants" target="_blank">
+									<img src="bahan/grab.png" width="70%"></div>
+								</a>
+							</td>
+						</tr>
+						<tr height="70px" align="center">
+							<td>
+								<div class="efek2"><a href="https://shopee.co.id/" target="_blank">
+									<img src="bahan/sopi.png" width="70%"></div>
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				</div>
+			</section>
+			</aside>
+		</div>
+		
+		<div id='footer'>
+			<center>Copyrigth &copy; 2021 Ijeom Food</center>
+		</div>
+	
+	</div>
+	</body>
+</html>

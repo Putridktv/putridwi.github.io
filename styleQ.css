@@ -1,0 +1,239 @@
+#luar{
+	max-width:1000px;
+	margin : auto;
+	background-color:#8B0000 ;
+}
+#header{	
+	position:relative;
+	background-image : url(bahan/header2.jpg);
+	max-width:1000px;
+	height:190px;
+ }
+.navbar{
+	margin-left: 90px;
+	overflow: hidden;
+	background-color: #8B0000;
+	font-family: poppins;
+	font-weight: bold;
+	margin-bottom: -25px;
+}
+
+.navbar a{
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar a, .navbar button.dropbtn{
+	margin-left: 100px;
+}
+
+.dropdown{
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn{
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: #8B0000;
+	font-family: poppins;
+	font-weight: bold;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+	background-color: black;
+	border-radius: 10px;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #8B0000;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	margin-left: 0px;
+	padding-right: 95px;
+}
+
+.dropdown-content a{
+	float: none;
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	
+}
+
+.dropdown-content a:hover{
+	background-color: black;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+ #konten{
+	position:relative; 
+	background-image : url(bahan/ijeom3.jpg);
+	max-width:1000px;
+	height:505px;
+	color:white;
+	display: block;
+ }
+ 
+.kontenin{
+	font-family : poppins;
+	position:relative; 
+	top:50px;
+	max-width:650px;
+	height:400px;
+	margin : 25px;
+	display: block;
+ }
+
+ #kontenProf{
+	position:relative; 
+	background-image : url(bahan/putri.jpg);
+	max-width:1000px;
+	height:505px;
+	color:white;
+	display: block;
+ }
+
+ .konteninProf{
+	font-family : poppins;
+	position:relative; 
+	top:20px;
+	max-width:650px;
+	height:400px;
+	margin : 25px;
+	display: block;
+ }
+ 
+ #konten2{
+	position:relative; 
+	background-color: #B22222;
+	max-width:1000px;
+	height:850px;
+	color:white;
+	display: block;
+	top: 4px;
+ }
+ .kontenin2{
+	font-family : poppins;
+	position:relative; 
+	max-width:960px;
+	height : 800px;
+	top : 20px;
+	margin : 20px 20px 20px 20px;
+	display: block;
+ }
+
+.kotak ul li{
+	Border-radius: 10px;
+	Width : 170px;
+	Height : 300px;
+	padding : 10px;
+	Background-color: white;
+	margin : 15px;
+	Display: inline-block;
+	color : black;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.kotak ul li img:hover{
+	width: 102%;
+	box-shadow: -5px -5px #b2222238;
+	Background-color: rgb(255, 243, 225);
+	border-radius: 10px;
+}
+
+#konten3{
+	position:relative; 
+	background-color: #B22222;
+	max-width:1000px;
+	height:1000px;
+	color:white;
+	display: block;
+	text-align: center;
+	font-family : poppins;
+	top: 25px;
+ }
+
+.order{
+	width: 700px;
+	height: 970px;
+	float: left;
+	margin: 30px;
+}
+table{
+	text-align:left;
+}
+
+aside{
+	width: 230px;
+	height: 1000px;
+	padding:0px 0px 0px 20px;
+	float: right;
+	background-color: #e74c3c;
+	padding : 0 0 0 0;
+}
+
+.kontak li{
+	list-style: none;
+	margin-top: 20px
+}
+.kontak{
+	width : 180px;
+	height: 180px;
+	background-color: white;
+	Border-radius: 10px;
+	margin: auto;
+	color : black;
+	font-weight: bold;
+	font-size: small;
+	padding-top: 20px;
+}
+.contack-details{
+	margin-top: 60px;
+}
+
+.avail{
+	width : 180px;
+	height: 240px;
+	background-color: white;
+	Border-radius: 10px;
+	margin: auto;
+	color : black;
+	font-weight: bold;
+	font-size: small;
+	padding-top: 20px;
+}
+
+.efek img:hover{
+	width: 80%;
+}
+.efek2 img:hover{
+	width: 76%;
+}
+
+ #footer{
+	clear:both;
+	margin-top:5px;
+	max-width:1000px;
+	height:30px;
+	background-color: #8B0000;
+	color:white;
+	display: block;
+	font-family : poppins;
+ }
